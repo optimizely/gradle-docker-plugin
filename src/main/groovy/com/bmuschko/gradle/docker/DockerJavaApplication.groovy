@@ -18,6 +18,6 @@ package com.bmuschko.gradle.docker
 class DockerJavaApplication {
     String baseImage = 'java'
     String maintainer = System.getProperty('user.name')
-    Integer port = 8080
+    List<Integer> ports = [8080]
     String tag
 }
