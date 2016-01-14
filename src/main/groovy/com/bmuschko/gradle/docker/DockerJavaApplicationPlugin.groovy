@@ -93,7 +93,7 @@ class DockerJavaApplicationPlugin implements Plugin<Project> {
     }
 
     private String determineWorkingDir(Tar tarTask) {
-        return tarTask.archiveName - ".${tarTask.extension}"
+        return "/" + (tarTask.archiveName - ".${tarTask.extension}")
     }
 
     private String determineEntryPoint(Project project) {
