@@ -1,4 +1,4 @@
-group = 'com.bmuschko'
+group = 'com.optimizely.gradle'
 version = '2.6.5'
 
 apply plugin: 'groovy'
